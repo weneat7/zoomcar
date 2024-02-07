@@ -1,3 +1,5 @@
+package com.example.zoomcar.models;
+
 public class User extends BaseModel {
     private String name;
     private String email;

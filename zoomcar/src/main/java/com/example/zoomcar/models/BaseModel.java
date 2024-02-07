@@ -1,3 +1,5 @@
+package com.example.zoomcar.models;
+
 import java.sql.Date;
 import lombok.Getters;
 import lombok.Setters;
