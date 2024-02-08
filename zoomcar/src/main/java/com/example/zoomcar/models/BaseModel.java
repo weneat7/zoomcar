@@ -1,12 +1,14 @@
 package com.example.zoomcar.models;
 
 import java.sql.Date;
-import lombok.Getters;
-import lombok.Setters;
 
-@Getters
-@Setters
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@MappedSuperclass
+@Setter
+@Getter
 public class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
