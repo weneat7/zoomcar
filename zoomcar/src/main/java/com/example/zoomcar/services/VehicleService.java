@@ -23,12 +23,11 @@ public class VehicleService {
 
 
     public boolean isVehicleAvailable(Vehicle vehicle, Date startDate, Date endDate) {
-        List<Date> bookedDates = vehicle.getBookingDates();
-        for(Date date: bookedDates) {
-            if(date.after(startDate) && date.before(endDate)) {
+        Date date = vehicle.getBookingDates();
+
+            if(date.after(startDate) && date.before(endDate))
                 return false;
-            }
-        }
+
         return true;
     }
 
